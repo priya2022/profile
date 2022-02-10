@@ -1,0 +1,338 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Cinzel:wght@400;500&family=Crimson+Pro:wght@200&family=IBM+Plex+Serif:wght@300&family=Josefin+Sans:ital,wght@0,100;1,500&family=Lobster&family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand:wght@300;400;500;600;700&display=swap');
+*
+{
+    padding:0;
+    margin:0;
+}
+body
+{
+  background-color:rgb(0, 0, 0);
+  color: black;
+  font-size: 14px;
+  font-family: 'Anton', sans-serif;
+    font-family: 'Cinzel', serif;
+    font-family: 'Crimson Pro', serif;
+    font-family: 'IBM Plex Serif', serif;
+    font-family: 'Josefin Sans', sans-serif;
+    font-family: 'Lobster', cursive;
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Quicksand', sans-serif;
+  line-height: 1.6em;  
+  margin:0px;
+  text-align:justify;
+  scroll-behavior: smooth;
+  letter-spacing: 0.1em;
+  
+}
+.main{
+    min-height:100vh; 
+    width:100%;
+    position:absolute;
+}
+.main1
+{
+    min-height:100vh; 
+    width:100%;
+    position:relative;
+}
+.img1
+{
+    background-image: url('../images/flower.jpg');
+    background-position: center center;
+    background-size: cover;
+    width:100vw;
+}
+.img2
+{
+    background-image: url('../images/about.jpg');
+    background-position: center center;
+    background-size: cover;
+}
+
+.img3
+{
+    background-image: url('../images/skills-img.jpg');
+    background-position: center center;
+    background-size: cover;
+}
+.img4
+{
+    background-image: url('../images/contact.jpg');
+    background-position: center center;
+    background-size: cover;
+}
+
+.titlename
+{
+    
+   
+    display:block;
+    margin-bottom:15px;
+    margin-top:15px;
+    font-family: 'Courier New', Courier, monospace;
+}
+.offcanvas-body,.offcanvas-header
+{
+    background-color:rgba(245, 229, 245, 0.8);
+    color: #502f4c;
+    font-size:20px;
+}
+
+.nav-link
+{
+    padding:15px;
+    line-height:50px;
+    font-weight:500;
+    font-size:20px;
+    background-color:rgba(245, 229, 245, 0.8);
+    color: #502f4c;
+}
+#img1{
+    background-image: url('../images/flower.jpg');
+}
+#img2{
+    background-image: url('../images/flower.jpg');
+}
+.carousel-item {
+    height:100vh;
+    
+    position:relative;
+}
+.overlay-image
+{
+    position:absolute;
+    bottom:0;
+    left:0;
+    right:0;
+    top:0;
+    background-size: cover;
+    background-position:center;
+}
+.card-body
+{
+    height:500px;
+    
+    font-weight:500;
+    font-size:20px;
+    line-height: 30px;
+    background-color:rgba(245, 229, 245, 0.8);
+    color: #502f4c;
+}
+.card-img-top
+{
+    height:100%;
+}
+.carousel-caption
+{
+    font-size:25px;
+    font-weight: 900;
+    
+}
+
+
+
+
+
+
+h2
+{
+    color: #ff2f3a;
+    font-size:20px;
+    
+    padding-left:30px;
+    padding-top:20px;
+    margin-top:10px;
+
+}
+#headtitles 
+{
+    padding:80px;
+}
+
+
+
+
+
+#sp 
+{
+    color: #502f4c;
+    text-indent: 50px;
+}
+
+
+   
+#content_banner
+{
+    background-color: rgba(255, 255, 255, 0.8);
+    color: white;
+   font-size:22px;
+   font-family: 'Poppins', sans-serif;
+    padding:30px;
+    border-radius:20px;
+    max-height:100vh;
+
+}
+
+.ptext{
+    padding:2px;
+    line-height: 2em;
+    color:rgba(248, 203, 0, 0.938);
+    
+
+}
+
+
+.content
+{
+    background-color: rgba(255, 255, 255, 0.8);
+    color: #502f4c;
+    margin:3px;
+    text-align:justify; 
+    
+    font-size:20px;
+    line-height: 50px;
+}
+
+
+.form input,textarea,button
+{
+    padding: 10px;
+    width:100%;
+    display: block;
+    border-radius:4px;
+    box-sizing: border-box;
+    border: 1px solid rosybrown;
+    margin:auto;
+    
+    font-weight:500;
+    font-size:20px;
+    line-height: 50px;
+    color: #502f4c;
+}
+
+
+
+
+.details
+{
+    width:100%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    
+    font-weight:500;
+    font-size:20px;
+    line-height: 50px;
+}
+.bar 
+{
+    border:2px solid #696969;
+    border-radius: 20px;
+   
+}
+.bar div{
+    border-radius: 10px;
+    height:9px;
+    width:0;
+    background-color:#52055c;
+    
+}
+
+h2
+{
+    margin-bottom: 20px;
+    font-size: 33px;
+    letter-spacing: 2px;
+    text-align: center;
+    font-weight: bold;
+}
+.skills:not(:last-child)
+{
+    margin-bottom:20px;
+}
+.w 
+{
+    
+    margin:auto;
+    min-width: 430px;
+
+}
+/*.nav-link
+{
+    
+    
+}*/
+.container
+{
+
+  padding:20px 20px 20px;
+  border:2px solid rgba(255, 255, 255, 0.06);
+  border-radius:10px;
+  box-shadow: 0 20px 30px rgba(0,0,0,0.2);
+  font-family:"Poppins" ,sans-serif;
+  color: #502f4c;
+  font-weight:500;
+  width:100vw;
+  background-color: rgba(255, 255, 255, 0.8);
+  
+
+}
+
+
+
+#html-bar
+{
+    animation: html-fill 2s forwards;
+
+}
+@keyframes html-fill 
+{
+    100%
+    {
+        width:90%;
+    }
+}
+
+#css-bar{
+    animation: css-fill 2s forwards;
+}
+@keyframes css-fill
+{
+    100%
+    {
+        width:72%;
+    }
+}
+
+#js-bar
+{
+    animation: js-fill 2s forwards;
+}
+
+@keyframes js-fill
+{
+    100%
+    {
+        width:70%;
+    }
+}
+#ReactJs-bar{
+    animation:rjs-fill 2s forwards;
+}
+@keyframes rjs-fill 
+{
+    100%
+    {
+        width:70%;
+    }
+}
+
+
+
+
+
+
+
+
+
+
