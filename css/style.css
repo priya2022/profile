@@ -49,13 +49,28 @@ body
     background-size: cover;
     width:100vw;
 }
-/*#personal
+#personal
 {
-    border-bottom-left-radius: 40%;
-    border-bottom-right-radius: 40%;
-    border-top-left-radius: 100%;
-    border-top-right-radius: 100%;
-}*/
+    border:5px solid rgb(224, 240, 1);
+    transform: rotate(-5deg);
+}
+.bi-arrow-right-short
+{
+    font-size:20px;
+    color:#502f4c;
+    
+}
+.bi-balloon-heart-fill
+{
+    color:red;
+    font-size:30px;
+}
+.bi-linkedin,.bi-github
+{
+    color:#502f4c;
+    font-size:35px;
+
+}
 .img2
 {
     background-image: url('../images/about.jpg');
@@ -90,9 +105,10 @@ body
 }
 .offcanvas-body,.offcanvas-header
 {
-    background-color:rgb(182, 223, 229,.3);
+    background-color:rgb(182, 223, 229,0.3);
     color: #502f4c;
     font-size:20px;
+    
 }
 .full
 {
