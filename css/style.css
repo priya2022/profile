@@ -54,6 +54,7 @@ body
     border:5px solid rgb(224, 240, 1);
     transform: rotate(-5deg);
     animation: for 20s infinite;
+    
 }
 @keyframes for {
     0% {margin-top:10%}
@@ -133,7 +134,7 @@ body
 
 #offcanvasRight
 {
-    transition: transform .2s ease-in;
+    transition: transform .2s ease-in-out;
     width:20%;
     background:transparent;
     
@@ -173,6 +174,41 @@ body
 #v-pills-settings-tab,#v-pills-projects-tab,#v-pills-messages-tab,#v-pills-profile-tab,#v-pills-home-tab
 {
     background:transparent !important;
+}
+#v-pills-settings-tab
+{
+    animation:anim1 2s ease-in;
+}
+#v-pills-projects-tab
+{
+    animation:anim2 2s ease-in;
+}
+#v-pills-messages-tab
+{
+    animation:anim3 2s ease-in;
+}
+#v-pills-profile-tab
+{
+    animation:anim4 2s ease-in;
+}
+#v-pills-home-tab
+{
+    animation:anim5 2s ease-in;
+}
+@keyframes anim1 {
+    0% {margin-top:10%}
+}
+@keyframes anim2 {
+    0% {margin-top:20%}
+}
+@keyframes anim3 {
+    0% {margin-top:30%}
+}
+@keyframes anim4 {
+    0% {margin-top:40%}
+}
+@keyframes anim5 {
+    0% {margin-top:50%}
 }
 .btn-close,.text-reset
 {
@@ -224,6 +260,8 @@ body
 .color
 {
     color:rgb(182, 223, 229) ;
+    padding:3px !important;
+    margin: 3px !important;
     
     
 }
@@ -270,6 +308,7 @@ h2
 {
     color: #502f4c;
     text-indent: 50px;
+    
 }
   
 #content_banner
@@ -285,9 +324,9 @@ h2
 }
 @keyframes anime3
 {
-    0% {margin-top:10%}
-    25% {margin-top:6%}
-    50% {margin-top:0%}
+    0% {margin-top:10%; transform: rotate(-5deg);}
+    25% {margin-top:6%; transform: rotate(-4deg);}
+    50% {margin-top:0%; transform: rotate(-2deg);}
 
 }
 .ptext{
@@ -317,14 +356,32 @@ h2
     text-align:justify; 
     font-size:20px;
     line-height: 50px;
-    animation: anime1 5s ease-in-out;
+    animation: anime4 5s ease-in-out;
+    
 }
 @keyframes anime1 {
-    0% {margin-left:-50%}
-    25% {margin-left:-25%}
+    0% {margin-left:-100%}
+    25% {margin-left:-50%}
     50% {margin-left:0%}
 
 }
+
+@keyframes anime4 {
+    
+    
+    0% {margin-left:-50%}
+    25% {margin-left:-30%}
+    100% {margin-left:0%}
+
+}
+/*@keyframes anime5 {
+    
+    
+    0% {margin-right:-50%}
+    25% {margin-right:-30%}
+    100% {margin-right:0%}
+
+}*/
 
 .content2
 {
@@ -334,13 +391,13 @@ h2
     text-align:justify; 
     font-size:20px;
     line-height: 50px;
-    animation: anime2 5s backwards;
+    animation: anime5 5s backwards;
 }
 @keyframes anime2 {
     
     
-    0% {margin-right:-50%}
-    25% {margin-right:-25%}
+    0% {margin-right:-100%}
+    25% {margin-right:-50%}
     50% {margin-right:0%}
 
 }
