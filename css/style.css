@@ -24,6 +24,13 @@ body
   letter-spacing: 0.1em;
   
 }
+.navbar
+{
+    background-color:rgb(182, 223, 229) !important;
+    height:50px;
+}
+
+
 .main{
     min-height:100vh; 
     width:100%;
@@ -33,15 +40,22 @@ body
 {
     min-height:100vh; 
     width:100%;
-    position:relative;
+    position:absolute;
 }
 .img1
 {
-    background-image: url('../images/flower.jpg');
+    background-image: url('../images/new.jpg');
     background-position: center center;
     background-size: cover;
     width:100vw;
 }
+/*#personal
+{
+    border-bottom-left-radius: 40%;
+    border-bottom-right-radius: 40%;
+    border-top-left-radius: 100%;
+    border-top-right-radius: 100%;
+}*/
 .img2
 {
     background-image: url('../images/about.jpg');
@@ -62,40 +76,49 @@ body
     background-size: cover;
 }
 
+
 .titlename
 {
-    
-   
     display:block;
     margin-bottom:15px;
     margin-top:15px;
     font-family: 'Courier New', Courier, monospace;
 }
+#offcanvasRight
+{
+    animation:2s ease-in-out;
+}
 .offcanvas-body,.offcanvas-header
 {
-    background-color:rgba(245, 229, 245, 0.8);
+    background-color:rgb(182, 223, 229,.3);
     color: #502f4c;
     font-size:20px;
+}
+.full
+{
+    width:50%;
 }
 
 .nav-link
 {
-    padding:15px;
+    
     line-height:50px;
     font-weight:500;
     font-size:20px;
     background-color:rgba(245, 229, 245, 0.8);
-    color: #502f4c;
+    color: #502f4c !important;
+    padding:5px !important;
+    
+
 }
 #img1{
-    background-image: url('../images/flower.jpg');
+    background-image: url('../images/new.jpg');
 }
 #img2{
-    background-image: url('../images/flower.jpg');
+    background-image: url('../images/new.jpg');
 }
 .carousel-item {
     height:100vh;
-    
     position:relative;
 }
 .overlay-image
@@ -111,12 +134,22 @@ body
 .card-body
 {
     height:500px;
-    
     font-weight:500;
     font-size:20px;
     line-height: 30px;
-    background-color:rgba(245, 229, 245, 0.8);
+    background-color:rgb(182, 223, 229,0.1) !important;
     color: #502f4c;
+}
+.color
+{
+    color:rgb(182, 223, 229) ;
+    
+    
+}
+.card-title
+{
+    font-size:22px;
+    font-weight: 800;
 }
 .card-img-top
 {
@@ -124,21 +157,16 @@ body
 }
 .carousel-caption
 {
-    font-size:20px;
-    font-weight: 900;
+    font-size:15px;
+    font-weight: 500;
     
 }
-
-
-
-
 
 
 h2
 {
     color: #ff2f3a;
     font-size:20px;
-    
     padding-left:30px;
     padding-top:20px;
     margin-top:10px;
@@ -149,24 +177,18 @@ h2
     padding:80px;
 }
 
-
-
-
-
 #sp 
 {
     color: #502f4c;
     text-indent: 50px;
 }
-
-
-   
+  
 #content_banner
 {
-    background-color: rgba(255, 255, 255, 0.8);
+    background-color: rgba(226, 251, 255, 0.3);
     color: white;
-   font-size:22px;
-   font-family: 'Poppins', sans-serif;
+    font-size:22px;
+    font-family: 'Poppins', sans-serif;
     padding:30px;
     border-radius:20px;
     max-height:100vh;
@@ -184,34 +206,39 @@ h2
 
 .content
 {
-    background-color: rgba(255, 255, 255, 0.8);
+    background-color: rgba(226, 251, 255, 0.3);
     color: #502f4c;
     margin:3px;
     text-align:justify; 
-    
     font-size:20px;
     line-height: 50px;
 }
 
 
-.form input,textarea,button
+/*.form input,textarea,button
 {
     padding: 10px;
-    width:100%;
+    
     display: block;
     border-radius:4px;
     box-sizing: border-box;
     border: 1px solid rosybrown;
     margin:auto;
-    
-    font-weight:500;
+    font-weight:500 !important;
     font-size:20px;
     line-height: 50px;
     color: #502f4c;
+}*/
+
+form
+{
+    
+    
+    font-weight:500 !important;
+    font-size:15px;
+   
+    color: #502f4c;
 }
-
-
-
 
 .details
 {
@@ -254,7 +281,7 @@ h2
 {
     
     margin:auto;
-    min-width: 430px;
+    min-width: 300px;
 
 }
 /*.nav-link
@@ -268,18 +295,22 @@ h2
   padding:20px 20px 20px;
   border:2px solid rgba(255, 255, 255, 0.06);
   border-radius:10px;
-  box-shadow: 0 20px 30px rgba(0,0,0,0.2);
+  box-shadow: 0 20px 30px rgba(179, 35, 35, 0.2);
   font-family:"Poppins" ,sans-serif;
   color: #502f4c;
   font-weight:500;
-  width:100vw;
-  background-color: rgba(255, 255, 255, 0.8);
+  background-color: rgba(255, 255, 255, 0.3);
   
-
+  
 }
-
-
-
+/*.carousel-control-prev-icon
+{
+    color:black;
+}
+.carousel-control-next-icon
+{
+    color:black;
+}*/
 #html-bar
 {
     animation: html-fill 2s forwards;

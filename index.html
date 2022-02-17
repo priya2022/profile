@@ -18,15 +18,13 @@
 </style>
 <body>
 
-    <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-light">
+    <nav class="navbar sticky-top navbar-expand-lg navbar-light ">
         <div class="container-fluid">
-          <a class="navbar-brand" href="#">Navbar</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-            <div class="navbar-nav ">
-                <button class="btn btn-info" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"><i class="bi bi-arrow-right-short"></i>Explore</button>
+          <a class="navbar-brand" href="#"></a>
+          
+          <div id="navbarNavAltMarkup">
+            <div class="navbar-nav d-flex ms-auto order-5 ">
+                <button class="btn color" type="button" style="color:#502f4c"data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"><i class="bi bi-arrow-right-short"></i>Explore</button>
             </div>
           </div>
         </div>
@@ -36,7 +34,7 @@
 
 <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
   <div class="offcanvas-header">
-    <h5 id="offcanvasRightLabel"><i class="bi bi-arrow-right-short"></i>Explore More About Me</h5>
+    <h5 id="offcanvasRightLabel"><i class="bi bi-arrow-right-short"></i></h5>
     <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
   </div>
   <div class="offcanvas-body">
@@ -97,23 +95,23 @@
           <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab">
             
             <div class="container-fluid main img1 align-items-center d-flex justify-content-center">
-
+              
                 <div class="row align-items-center d-flex justify-content-center">
                     <div class="col-md-3 col-sm-8 col-xl-4 col-10 col-lg-3">
             
-                        <img src="images/photo.jpeg.jpg" alt ="Image of Me" title ="Image of Priyadarshini" style="width:100%; height:50vh;border-radius:10px"  >
+                        <img src="images/priyaa.jpg" id="personal" alt ="Image of Me" title ="Image of Priyadarshini" style="width:100%; height:70vh;border-radius:20px"  >
             
                     </div>
             
                     <div class ="col-md-9 col-sm-12 col-xl-9 col-12 col-lg-9 mt-2">
             
                         <div id="content_banner" >
-                            <p id="sp" style="font-weight: 600; font-size:50px;letter-spacing:2px; font-family: 'Poppins', sans-serif;">
+                            <p id="sp" style="font-weight: 600; font-size:60px;letter-spacing:2px; font-family: 'Poppins', sans-serif;">
                                  Priyadarshini N
                                  
                                 <br/>                    
                             </p>
-                            <P class="text-muted" style="text-indent:50px; font-weight: 900; font-size:22px; letter-spacing:5px;margin-top:-20px">MERN STACK DEVELOPER</P>
+                            <P class="text-muted" style="text-indent:50px; font-weight: 900; font-size:25px; letter-spacing:5px;margin-top:-20px">MERN STACK DEVELOPER</P>
             
                             <p id="sp" style="text-align:justify; font-weight:500;font-size:20px;line-height: 50px;margin-top:40px">
                                 I am Good at learning different skills, programming where my good source of knowlegde could add value to any institution.
@@ -166,157 +164,346 @@
           </div>
           <div class="tab-pane fade" id="v-pills-messages" role="tabpanel" aria-labelledby="v-pills-messages-tab">
             
-            
-            <div class="container-fluid main1 img1 d-flex align-items-center justify-content-center " style="margin-left:80%">
-
-                <div class="row d-flex align-items-center justify-content-center">
-
-                    <div class="container col-md-12 col-lg-12 col-sm-12" >
-                        <div >
-                            <P>
-                           
-                               <div class="w">
-                               <div class="skills">
-                               <div class="details">
-                                   <span>
-                                       HTML
-                                   </span>
-                                   <span>90%</span>
-           
-                               </div>
-           
-                               <div class="bar">
-                                   <div id="html-bar">
-           
-                                   </div>
-                               </div>
-                           </div>
-           
-                           <div class="skills">
-                               <div class="details">
-                                   <span>CSS</span><span>72%</span>
-                               </div>
-           
-                               <div class="bar">
-                                   <div id="css-bar">
-           
-                                   </div>
-                               </div>
-                           </div>
-           
-                           <div class="skills">
-                               <div class="details">
-                                   <span>
-                                       JavaScript
-                                   </span>
-                                   <span>
-                                       70%
-                                   </span>
-                               </div>
-           
-                               <div class="bar">
-                                   <div id="js-bar">
-           
-                                   </div>
-                               </div>
-                           </div>
-           
-                           <div class="skills">
-                               <div class="details">
-                                   <span>
-                                       ReactJs
-                                   </span>
-                                   <span>
-                                       70%
-                                   </span>
-                               </div>
-                               <div class="bar">
-                                   <div id="ReactJs-bar">
-           
-                                   </div>
-                               </div>
-                         
-                       </div>
-                   </P>
-                       </div>
+           <!-- <div class="accordion" id="accordionExample">
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingOne">
+                  <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                    Front End
+                  </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingTwo">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                    Back End
+                  </button>
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
                     
-                    </div>
+            <div class="container-fluid main1 img1 d-flex align-items-center justify-content-center " >
 
-                    <!--<div class="container col-md- col-lg-4 col-sm-4" >
-                    <div >
-                        <P>
+              <div class="row d-flex align-items-center justify-content-center">
+
+                  <div class="container col-md-12 col-lg-12 col-sm-12" >
+                      <div >
+                          <P>
+                         
+                             <div class="w">
+                             <div class="skills">
+                             <div class="details">
+                                 <span>
+                                     HTML
+                                 </span>
+                                 <span>90%</span>
+         
+                             </div>
+         
+                             <div class="bar">
+                                 <div id="html-bar">
+         
+                                 </div>
+                             </div>
+                         </div>
+         
+                         <div class="skills">
+                             <div class="details">
+                                 <span>CSS</span><span>72%</span>
+                             </div>
+         
+                             <div class="bar">
+                                 <div id="css-bar">
+         
+                                 </div>
+                             </div>
+                         </div>
+         
+                         <div class="skills">
+                             <div class="details">
+                                 <span>
+                                     JavaScript
+                                 </span>
+                                 <span>
+                                     70%
+                                 </span>
+                             </div>
+         
+                             <div class="bar">
+                                 <div id="js-bar">
+         
+                                 </div>
+                             </div>
+                         </div>
+         
+                         <div class="skills">
+                             <div class="details">
+                                 <span>
+                                     ReactJs
+                                 </span>
+                                 <span>
+                                     70%
+                                 </span>
+                             </div>
+                             <div class="bar">
+                                 <div id="ReactJs-bar">
+         
+                                 </div>
+                             </div>
                        
-                       
-                   
-                           <div class="w">
-                           <div class="skills">
-                           <div class="details">
-                               <span>
-                                   MongoDB
-                               </span>
-                               <span>90%</span>
-       
-                           </div>
-       
-                           <div class="bar">
-                               <div id="html-bar">
-       
-                               </div>
-                           </div>
-                       </div>
-       
-                       <div class="skills">
-                           <div class="details">
-                               <span>NodeJs</span><span>72%</span>
-                           </div>
-       
-                           <div class="bar">
-                               <div id="css-bar">
-       
-                               </div>
-                           </div>
-                       </div>
-       
-                       <div class="skills">
-                           <div class="details">
-                               <span>
-                                   Python
-                               </span>
-                               <span>
-                                   70%
-                               </span>
-                           </div>
-       
-                           <div class="bar">
-                               <div id="js-bar">
-       
-                               </div>
-                           </div>
-                       </div>
-       
-                       <div class="skills">
-                           <div class="details">
-                               <span>
-                                   Django
-                               </span>
-                               <span>
-                                   70%
-                               </span>
-                           </div>
-                           <div class="bar">
-                               <div id="ReactJs-bar">
-       
-                               </div>
-                           </div>
+                     </div>
+                 </P>
+                     </div>
+                  
+                  </div>
+
+                  <div class="container col-md- col-lg-4 col-sm-4" >
+                  <div >
+                      <P>
                      
-                   </div>
-               </P>
-                   </div>
-                
-                </div>-->
+                     
+                 
+                         <div class="w">
+                         <div class="skills">
+                         <div class="details">
+                             <span>
+                                 MongoDB
+                             </span>
+                             <span>90%</span>
+     
+                         </div>
+     
+                         <div class="bar">
+                             <div id="html-bar">
+     
+                             </div>
+                         </div>
+                     </div>
+     
+                     <div class="skills">
+                         <div class="details">
+                             <span>NodeJs</span><span>72%</span>
+                         </div>
+     
+                         <div class="bar">
+                             <div id="css-bar">
+     
+                             </div>
+                         </div>
+                     </div>
+     
+                     <div class="skills">
+                         <div class="details">
+                             <span>
+                                 Python
+                             </span>
+                             <span>
+                                 70%
+                             </span>
+                         </div>
+     
+                         <div class="bar">
+                             <div id="js-bar">
+     
+                             </div>
+                         </div>
+                     </div>
+     
+                     <div class="skills">
+                         <div class="details">
+                             <span>
+                                 Django
+                             </span>
+                             <span>
+                                 70%
+                             </span>
+                         </div>
+                         <div class="bar">
+                             <div id="ReactJs-bar">
+     
+                             </div>
+                         </div>
+                   
+                 </div>
+             </P>
+                 </div>
+              
+              </div>
+              </div>
+          
+              </div>
+                    
+                  </div>
                 </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingThree">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                    Frameworks
+                  </button>
+                </h2>
+                <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                  </div>
+                </div>
+              </div>
+            </div>-->
             
-                </div>
+            <div class="container-fluid main1 img1 d-flex align-items-center justify-content-center " style="width:100%" >
+             
+           
+
+              <!--<div class="row d-flex align-items-center justify-content-center">-->
+
+                 <div class="container" >
+                         <div class="w">
+                             <div class="skills">
+                             <div class="details">
+                                 <span>
+                                     HTML
+                                 </span>
+                                 <span>90%</span>
+         
+                             </div>
+         
+                             <div class="bar">
+                                 <div id="html-bar">
+         
+                                 </div>
+                             </div>
+                         </div>
+         
+                         <div class="skills">
+                             <div class="details">
+                                 <span>CSS</span><span>72%</span>
+                             </div>
+         
+                             <div class="bar">
+                                 <div id="css-bar">
+         
+                                 </div>
+                             </div>
+                         </div>
+         
+                         <div class="skills">
+                             <div class="details">
+                                 <span>
+                                     JavaScript
+                                 </span>
+                                 <span>
+                                     70%
+                                 </span>
+                             </div>
+         
+                             <div class="bar">
+                                 <div id="js-bar">
+         
+                                 </div>
+                             </div>
+                         </div>
+         
+                         <div class="skills">
+                             <div class="details">
+                                 <span>
+                                     ReactJs
+                                 </span>
+                                 <span>
+                                     70%
+                                 </span>
+                             </div>
+                             <div class="bar">
+                                 <div id="ReactJs-bar">
+         
+                                 </div>
+                             </div>
+                       
+                     </div>
+                
+                     </div>
+                  
+                  
+
+                <!--<div class="container col-md- col-lg-4 col-sm-4" >
+                  <div >
+                      <P>
+                     
+                     
+                 
+                         <div class="w">
+                         <div class="skills">
+                         <div class="details">
+                             <span>
+                                 MongoDB
+                             </span>
+                             <span>90%</span>
+     
+                         </div>
+     
+                         <div class="bar">
+                             <div id="html-bar">
+     
+                             </div>
+                         </div>
+                     </div>
+     
+                     <div class="skills">
+                         <div class="details">
+                             <span>NodeJs</span><span>72%</span>
+                         </div>
+     
+                         <div class="bar">
+                             <div id="css-bar">
+     
+                             </div>
+                         </div>
+                     </div>
+     
+                     <div class="skills">
+                         <div class="details">
+                             <span>
+                                 Python
+                             </span>
+                             <span>
+                                 70%
+                             </span>
+                         </div>
+     
+                         <div class="bar">
+                             <div id="js-bar">
+     
+                             </div>
+                         </div>
+                     </div>
+     
+                     <div class="skills">
+                         <div class="details">
+                             <span>
+                                 Django
+                             </span>
+                             <span>
+                                 70%
+                             </span>
+                         </div>
+                         <div class="bar">
+                             <div id="ReactJs-bar">
+     
+                             </div>
+                         </div>
+                   
+                 </div>
+             </P>
+                 </div>
+              
+              </div>-->
+            </div>
+          
+              <!--</div>-->
+            
         
             </div>
           </div>
@@ -325,11 +512,7 @@
           <div class="tab-pane fade" id="v-pills-projects" role="tabpanel" aria-labelledby="v-pills-projects-tab">
             
             <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
-                <div class="carousel-indicators">
-                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                </div>
+                
                 <div class="carousel-inner">
                   <div class="carousel-item active">
                     <div class="overlay-image" id="img1">
@@ -448,28 +631,58 @@
 
           <div class="tab-pane fade" id="v-pills-settings" role="tabpanel" aria-labelledby="v-pills-settings-tab"><div id="contact">
             
-            <div class="container-fluid main img1 align-items-center justify-content-center  d-flex ">
 
-                <div class="row align-items-center justify-content-center d-flex   ">
+            
+            <div class="container-fluid main img1 ">
+
+                <div class="row my-3 align-items-center justify-content-center d-flex">
         
                       
-                            <span action="post" class="form ptext col-md-8 col-12 col-sm-6 col-xl-6 col-lg-6 ">
+                 <span  class="  col-md-4 col-12 col-sm-5 col-xl-5 col-lg-5 ">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d12902.356467826707!2d79.66232142197491!3d11.086299774101127!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1643199943826!5m2!1sen!2sin"   height="350" style="border:0;" allowfullscreen="" loading="lazy" ></iframe>
+                    
+                  </span>
+
+                            <!--<span action="post" class="form ptext col-md-8 col-12 col-sm-6 col-xl-6 col-lg-6 ">
                                 <input type="text" id="fname" placeholder="Name" name="name"><br>
                                 <input type="email" id="iemail" name="email" placeholder="Email"><br>
                                 <textarea id="itextarea" name="textarea" placeholder="Message"></textarea><br>
                                 <input type="submit">
                                 
-                            </span>
-        
-                            <span action="post" class="form ptext col-md-3 col-10 col-sm-5 col-xl-5 col-lg-5 ">
-                                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d12902.356467826707!2d79.66232142197491!3d11.086299774101127!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1643199943826!5m2!1sen!2sin"   height="300" style="border:0;" allowfullscreen="" loading="lazy" ></iframe>
-                                
-                            </span>
-        
+                            </span>-->
                             
-            </div> 
-               
+                            <form class="col-md-3 col-12 col-sm-6 col-xl-4 col-lg-4 ">
+                              <div class="mb-3">
+                                <div class="mb-3">
+                                  <label for="exampleInputName" class="form-label">Name</label>
+                                  <input type="text" class="form-control" id="exampleInputName">
+                                </div>
+                                <label for="exampleInputEmail1" class="form-label">Email address</label>
+                                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                                <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                              </div>
+                              <div class="mb-3">
+                                <label for="exampleInputPassword1" class="form-label">Password</label>
+                                <input type="password" class="form-control" id="exampleInputPassword1">
+                              </div>
+                              <div class="mb-3 ">
+                                <label class="form-label" for="exampleTextArea">Message</label>
+                                <input type="textarea" class="form-control" id="exampleTextArea">
+                              </div>
+                              <button type="submit" class="btn btn-primary">Submit</button>
+                            </form>
+        
+                          
             </div>
+
+            <footer class="my-5 d-flex align-items-center justify-content-center">
+              <p style="font-size: 20px; color:#502f4c;font-family: 'Poppins', sans-serif;">&copy Designed by Priyadarshini,2022</p>
+            </footer>
+          </div>
+
+            </div>
+
+             
         
         
         </div>
