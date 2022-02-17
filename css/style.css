@@ -164,7 +164,18 @@ body
     color:white !important;
     padding:5px !important;
     background-color: none !important;
+
+}
+.anime6
+{
+    animation:anime6 3s ease-in-out;
+}
+@keyframes anime6{
     
+    
+    0% {margin-left:-10%}
+    25% {margin-left:-5%}
+    100% {margin-left:0%}
 
 }
 .nav-link:hover
