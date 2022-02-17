@@ -53,17 +53,48 @@ body
 {
     border:5px solid rgb(224, 240, 1);
     transform: rotate(-5deg);
+    animation: for 20s infinite;
+}
+@keyframes for {
+    0% {margin-top:10%}
+    25% {margin-top:-6%}
+    50% {margin-top:0%}
+    75% {margin-top:6%}
+    100% {margin-top:10%}
+    
+}
+
+
+#personal:hover
+{
+    transform: rotate(-15deg);
+    transform: scale(1.2,1.2);
 }
 .bi-arrow-right-short
 {
-    font-size:20px;
+    font-size:30px;
     color:#502f4c;
-    
 }
+
 .bi-balloon-heart-fill
 {
     color:red;
     font-size:30px;
+    animation: move 10s infinite;
+}
+
+@keyframes move {
+    0% {margin-left:10%}
+    25% {margin-left:-6%}
+    50% {margin-left:0%}
+    75% {margin-left:6%}
+    100% {margin-left:10%}
+    
+}
+.bi-balloon-heart-fill:hover
+{
+   margin-top:-50px;
+   font-size:100px;
 }
 .bi-linkedin,.bi-github
 {
@@ -99,13 +130,19 @@ body
     margin-top:15px;
     font-family: 'Courier New', Courier, monospace;
 }
+
 #offcanvasRight
 {
-    animation:2s ease-in-out;
+    transition: transform .2s ease-in;
+    width:20%;
+    background:transparent;
+    
 }
+
+
 .offcanvas-body,.offcanvas-header
 {
-    background-color:rgb(182, 223, 229,0.3);
+    background-color:rgba(155, 155, 155, 0.4);
     color: #502f4c;
     font-size:20px;
     
@@ -121,11 +158,39 @@ body
     line-height:50px;
     font-weight:500;
     font-size:20px;
-    background-color:rgba(245, 229, 245, 0.8);
-    color: #502f4c !important;
+    background-color:rgba(255, 255, 255, 0.4);
+    /*color: #502f4c !important;*/
+    color:white !important;
     padding:5px !important;
+    background-color: none !important;
     
 
+}
+.nav-link:hover
+{
+    font-size:25px;
+}
+#v-pills-settings-tab,#v-pills-projects-tab,#v-pills-messages-tab,#v-pills-profile-tab,#v-pills-home-tab
+{
+    background:transparent !important;
+}
+.btn-close,.text-reset
+{
+    color:white !important;
+    font-weight: 900 !important;
+
+}
+.btn-close:hover
+{
+    color:white !important;
+    font-size:25px;
+}
+.nav-link:hover
+{
+    border-left:8px solid #91ff00 !important;
+    background-color: none !important;
+    display:block !important;
+    color:#91ff00 !important;
 }
 #img1{
     background-image: url('../images/new.jpg');
@@ -177,6 +242,14 @@ body
     font-weight: 500;
     
 }
+.carousel-caption>h5
+{
+    animation: anime1 5s ease-in;
+}
+.carousel-caption>p
+{
+    animation: anime2 5s ease-in;
+}
 
 
 h2
@@ -208,9 +281,15 @@ h2
     padding:30px;
     border-radius:20px;
     max-height:100vh;
+    animation:anime3 5s ease-in;
+}
+@keyframes anime3
+{
+    0% {margin-top:10%}
+    25% {margin-top:6%}
+    50% {margin-top:0%}
 
 }
-
 .ptext{
     padding:2px;
     line-height: 2em;
@@ -220,7 +299,7 @@ h2
 }
 
 
-.content
+/*.content
 {
     background-color: rgba(226, 251, 255, 0.3);
     color: #502f4c;
@@ -228,6 +307,42 @@ h2
     text-align:justify; 
     font-size:20px;
     line-height: 50px;
+    
+}*/
+.content1
+{
+    background-color: rgba(226, 251, 255, 0.3);
+    color: #502f4c;
+    margin:3px;
+    text-align:justify; 
+    font-size:20px;
+    line-height: 50px;
+    animation: anime1 5s ease-in-out;
+}
+@keyframes anime1 {
+    0% {margin-left:-50%}
+    25% {margin-left:-25%}
+    50% {margin-left:0%}
+
+}
+
+.content2
+{
+    background-color: rgba(226, 251, 255, 0.3);
+    color: #502f4c;
+    margin:3px;
+    text-align:justify; 
+    font-size:20px;
+    line-height: 50px;
+    animation: anime2 5s backwards;
+}
+@keyframes anime2 {
+    
+    
+    0% {margin-right:-50%}
+    25% {margin-right:-25%}
+    50% {margin-right:0%}
+
 }
 
 
@@ -305,6 +420,11 @@ h2
     
     
 }*/
+
+.anime3
+{
+    animation:anime3 5s ease-in;
+}
 .container
 {
 
@@ -316,9 +436,11 @@ h2
   color: #502f4c;
   font-weight:500;
   background-color: rgba(255, 255, 255, 0.3);
-  
+  animation: anime3 5s ease-in;
   
 }
+
+
 /*.carousel-control-prev-icon
 {
     color:black;
