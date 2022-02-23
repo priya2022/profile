@@ -604,14 +604,20 @@ footer
     padding:5px;
     margin-top:100px;
 }
-/*.carousel-control-prev-icon
+
+.carousel-control-prev-icon,.carousel-control-next-icon
 {
-    color:black;
+    color:black !important;
+    font-size: 10% !important;
+    background-color:#502f4c !important;
+    border-radius: 50%;
+    
 }
-.carousel-control-next-icon
+.carousel-control-next-icon:hover,.carousel-control-prev-icon:hover
 {
-    color:black;
-}*/
+    background-color:#52055c !important;
+}
+
 #html-bar
 {
     animation: html-fill 2s forwards;
