@@ -61,6 +61,7 @@ body
 {
     border:5px solid rgb(224, 240, 1);
     animation: for 20s infinite;
+    border-top-right-radius:20px !important;
     
 }
 @keyframes for {
@@ -118,6 +119,20 @@ body
     font-size:45px ;
     margin:20px;
     
+    
+}
+.style
+{
+    color:#a319f3;
+    font-size:25px ;
+    margin:2px;
+    text-indent:50px;
+    margin-bottom:20px;
+}
+.style:hover
+{
+    color:#1f1425 !important;
+    font-size:28px !important;;
     
 }
 .bi-linkedin:hover,.bi-github:hover,.bi-instagram:hover,.bi-twitter:hover,.bi-envelope:hover,.bi-telephone-fill:hover
