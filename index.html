@@ -33,18 +33,18 @@
 
 
 
-<div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+<div class="offcanvas offcanvas-end"  tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
   <div class="offcanvas-header">
     <h5 id="offcanvasRightLabel"></i></h5>
     <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
   </div>
   <div class="offcanvas-body">
     <div class="nav flex-column nav-pills " id="v-pills-tab" role="tablist" aria-orientation="vertical">
-        <button class="nav-link active" id="v-pills-home-tab" data-bs-toggle="pill" data-bs-target="#v-pills-home" type="button" role="tab" aria-controls="v-pills-home" aria-selected="true"><i class="bi bi-arrow-right-short"></i>Home</button>
-        <button class="nav-link" id="v-pills-profile-tab" data-bs-toggle="pill" data-bs-target="#v-pills-profile" type="button" role="tab" aria-controls="v-pills-profile" aria-selected="false"><i class="bi bi-arrow-right-short"></i>About Me</button>
-        <button class="nav-link" id="v-pills-messages-tab" data-bs-toggle="pill" data-bs-target="#v-pills-messages" type="button" role="tab" aria-controls="v-pills-messages" aria-selected="false"><i class="bi bi-arrow-right-short"></i>Skills</button>
-        <button class="nav-link" id="v-pills-projects-tab" data-bs-toggle="pill" data-bs-target="#v-pills-projects" type="button" role="tab" aria-controls="v-pills-projects" aria-selected="false"><i class="bi bi-arrow-right-short"></i>Projects</button>
-        <button class="nav-link" id="v-pills-settings-tab" data-bs-toggle="pill" data-bs-target="#v-pills-settings" type="button" role="tab" aria-controls="v-pills-settings" aria-selected="false"><i class="bi bi-arrow-right-short"></i>Contact </button>
+        <button class="nav-link active" id="v-pills-home-tab" data-bs-toggle="pill" data-bs-target="#v-pills-home" type="button" role="tab" aria-controls="v-pills-home" onclick="closeOff()" aria-selected="true"><i class="bi bi-arrow-right-short"></i>Home</button>
+        <button class="nav-link" id="v-pills-profile-tab" data-bs-toggle="pill" data-bs-target="#v-pills-profile" type="button" role="tab" aria-controls="v-pills-profile" onclick="closeOff()" aria-selected="false"><i class="bi bi-arrow-right-short"></i>About Me</button>
+        <button class="nav-link" id="v-pills-messages-tab" data-bs-toggle="pill" data-bs-target="#v-pills-messages" type="button" role="tab" aria-controls="v-pills-messages" onclick="closeOff()" aria-selected="false"><i class="bi bi-arrow-right-short"></i>Skills</button>
+        <button class="nav-link" id="v-pills-projects-tab" data-bs-toggle="pill" data-bs-target="#v-pills-projects" type="button" role="tab" aria-controls="v-pills-projects" onclick="closeOff()" aria-selected="false"><i class="bi bi-arrow-right-short"></i>Projects</button>
+        <button class="nav-link" id="v-pills-settings-tab" data-bs-toggle="pill" data-bs-target="#v-pills-settings" type="button" role="tab" aria-controls="v-pills-settings" onclick="closeOff()" aria-selected="false"><i class="bi bi-arrow-right-short"></i>Contact </button>
       </div>
   </div>
 </div>
@@ -98,13 +98,13 @@
             <div class="container-fluid main img1 align-items-center d-flex justify-content-center">
               
                 <div class="row align-items-center d-flex justify-content-center">
-                    <div class="col-md-3 col-sm-8 col-xl-4 col-10 col-lg-3">
+                    <div class="col-md-4 col-sm-8 col-xl-4 col-10 col-lg-3">
             
                         <img src="images/priyaa.jpg" id="personal" alt ="Image of Me" title ="Image of Priyadarshini" style="width:100%; height:60vh;border-radius:10px"  >
             
                     </div>
             
-                    <div class ="col-md-9 col-sm-12 col-xl-9 col-12 col-lg-9 mt-2" >
+                    <div class ="col-md-10 col-sm-12 col-xl-9 col-12 col-lg-9 mt-2" >
             
                         <div id="content_banner" >
                           <p style="color:#502f4c;text-indent:50px; font-size: 2vw;font-style:italic;">  HI, I'm<i class="bi bi-balloon-heart-fill"></i></p>
@@ -137,7 +137,7 @@
 
                 <div class="row d-flex align-items-center justify-content-center">
                    
-                    <div class="ptext col-md-5 col-sm-6 col-12 col-lg-5 col-xl-5 content1  "style="height:80vh;">
+                    <div class="ptext col-md-5 col-sm-10 col-12 col-lg-5 col-xl-5 content1  "style="height:80vh;">
                         <P>
                             <ul>
                             <li>ReactJs - Hands on Experience Front End FrameWork </li>
@@ -149,7 +149,7 @@
                         </P>
                     </div>
 
-                    <div class="ptext col-md-5 col-sm-6 col-12 col-lg-5 col-xl-5 content2 "style="height:80vh;">
+                    <div class="ptext col-md-5 col-sm-10 col-12 col-lg-5 col-xl-5 content2 "style="height:80vh;">
                         <P>
                             <ul>
                             <li>Developed Zomato clone website using MERN Stack</li>
@@ -541,7 +541,7 @@
                               </div>
                               </div>
         
-                              <div class="col-md-3 col-sm-4 col-xl-4 d-col-none mx-1 card2">
+                              <div class="col-md-3 col-sm-4 col-xl-4 d-col-none d-sm-block mx-1 card2">
                               <div class="card" style="width: 100%;height:80vh">
                                 <img src="images/4.png" class="card-img-top " alt="...">
                                 <div class="card-body">
@@ -650,7 +650,7 @@
                 <div class="row my-3 align-items-center justify-content-center d-flex ">
         
                       
-                 <span  class=" anime3 col-md-6 col-12 col-sm-5 col-xl-5 col-lg-5  boxMap cont_form"style="height:80vh;">
+                 <span  class=" anime3 col-md-6 col-12 col-sm-10 col-xl-5 col-lg-5  boxMap cont_form"style="height:50vh;">
                     <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d12902.356467826707!2d79.66232142197491!3d11.086299774101127!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1643199943826!5m2!1sen!2sin" width="100%"  height="100%" style="border:0;" allowfullscreen="" loading="lazy" ></iframe>
                     
                   </span>
@@ -718,6 +718,20 @@
         </div>
       </div>
       
+    <script>
+
+      closeOff = ()=> {
+
+        var navLink = document.getElementsByClassName('nav-link')
+        let offcanvas = document.getElementsByClassName('offcanvas')
+        
+        navLink.classList.add(`data-bs-dismiss = ${offcanvas}`)
+      }
+      closeOff();
+
+      
+
+    </script>
 
 
      
