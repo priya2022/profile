@@ -60,7 +60,6 @@ body
 #personal
 {
     border:5px solid rgb(224, 240, 1);
-    transform: rotate(-5deg);
     animation: for 20s infinite;
     
 }
