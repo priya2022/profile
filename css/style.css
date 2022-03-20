@@ -501,10 +501,10 @@ h2
 
 .details
 {
-    width:100%;
+    width:90%;
     display: flex;
     justify-content: space-between;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
     
     font-weight:500;
     
@@ -540,7 +540,8 @@ h2
 {
     
     margin:auto;
-    min-width: 80vh;
+    min-width: 50vh;
+    
 
 }
 /*.nav-link
